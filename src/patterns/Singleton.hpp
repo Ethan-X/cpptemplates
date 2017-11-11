@@ -2,7 +2,7 @@
 
 #include <memory>
 
-#include "Spinlock.hpp"
+#include "../parallel/Spinlock.hpp"
 
 using namespace std;
 
@@ -13,7 +13,7 @@ public:
 	static T* GetInstance()
 	{
 		SpinlockGuard CriticalSection(Lock);
-
+		
 		if (Instance == nullptr)
 			Instance.reset(new T);
 

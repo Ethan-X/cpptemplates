@@ -19,24 +19,69 @@
     <Filter Include="헤더 파일\unittest">
       <UniqueIdentifier>{2e4c2ef8-eded-47b1-acc9-9a2bda906c93}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\bluespark">
+      <UniqueIdentifier>{04c967fc-6aa7-4174-b54b-5fc5a26118f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\bluespark">
+      <UniqueIdentifier>{d70ac5f7-500d-4866-bfb6-987e35ae9f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\diagnostics">
+      <UniqueIdentifier>{e7bfd59c-94b9-4609-9ed5-b24027b7ef65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\diagnostics">
+      <UniqueIdentifier>{967786a3-e2f3-4e05-983e-ebaa2fe7df2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\parallel">
+      <UniqueIdentifier>{39a085c1-2582-4258-866a-7415caf6bb50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\parallel">
+      <UniqueIdentifier>{d24fafb5-5f8b-4f90-ad4c-1f97d273ffe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\patterns">
+      <UniqueIdentifier>{83487724-07b0-4dad-8454-c4237389faf8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Spinlock.hpp">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Singleton.hpp">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="src\unittest\App.hpp">
       <Filter>헤더 파일\unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Disposable.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unittest\unittest_spinlock.hpp">
+      <Filter>헤더 파일\unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="src\diagnostics\Stopwatch.hpp">
+      <Filter>헤더 파일\diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\unittest\unittest_stopwatch.hpp">
+      <Filter>헤더 파일\unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="src\parallel\Spinlock.hpp">
+      <Filter>헤더 파일\parallel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\patterns\Singleton.hpp">
+      <Filter>헤더 파일\patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Constants.hpp">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\unittest\App.cpp">
       <Filter>소스 파일\unittest</Filter>
     </ClCompile>
-    <ClCompile Include="src\Spinlock.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="src\unittest\unittest_spinlock.cpp">
+      <Filter>소스 파일\unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="src\diagnostics\Stopwatch.cpp">
+      <Filter>소스 파일\diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\unittest\unittest_stopwatch.cpp">
+      <Filter>소스 파일\unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parallel\Spinlock.cpp">
+      <Filter>소스 파일\parallel</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

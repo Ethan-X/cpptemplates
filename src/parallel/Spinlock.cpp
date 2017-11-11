@@ -17,7 +17,7 @@ Spinlock::~Spinlock()
 void Spinlock::EnterLock()
 {
 	while (LockFlag.test_and_set(memory_order_acquire))
-		this_thread::sleep_for(milliseconds(1));
+		this_thread::sleep_for(microseconds(1));
 }
 
 void Spinlock::LeaveLock()
